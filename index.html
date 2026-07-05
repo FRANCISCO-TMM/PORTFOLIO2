@@ -3,193 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Godwin Chukwunonso — Cybersecurity Student</title>
-  <meta name="description" content="Portfolio and academic hub for Godwin Chukwunonso, Cybersecurity student at MIVA Open University.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="style.css">
+  <title>Michael George — Cybersecurity Portfolio</title>
+  <meta name="description" content="Personal portfolio and academic management site for Michael George, Cybersecurity student at MIVA Open University.">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 
-  <header class="site-nav">
-    <div class="wrap nav-inner">
-      <a href="index.html" class="nav-mark">GODWIN <span>CHUKWUNONSO</span></a>
-      <nav aria-label="Primary">
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="planner.html">Planner</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
-        <span></span>
-      </button>
+  <nav class="tabbar">
+    <div class="nav-inner">
+      <div class="nav-dots"><span></span><span></span><span></span></div>
+      <span class="nav-brand"><strong>michael@portfolio</strong>:~$</span>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="planner.html">planner</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <!-- HERO: split-screen -->
+  <main class="container">
+
     <section class="hero">
-      <div class="hero-copy">
-        <span class="eyebrow" data-hero-item="1">100 Level · B.Sc. Cybersecurity · MIVA Open University</span>
-        <h1 data-hero-item="2">Building secure systems,<br><em>one careful line</em> at a time.</h1>
-        <p class="hero-lede" data-hero-item="3">I'm Godwin Chukwunonso — a 100-level Cybersecurity student passionate about digital forensics, threat intelligence, and uncovering vulnerabilities to build a more secure digital space.</p>
-        <div class="hero-actions" data-hero-item="4">
-          <a href="projects.html" class="btn btn-primary">View my projects</a>
-          <a href="contact.html" class="btn btn-outline">Get in touch</a>
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <em>michael@security-ops: ~</em>
         </div>
-        <div class="status-bar" data-hero-item="5" style="margin-top: 1.5rem;">
-          <span><span class="dot"></span>OPEN TO INTERNSHIPS</span>
-          <span>100 LEVEL</span>
-          <span>ABUJA, NIGERIA</span>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="avatar-frame" data-hero-item="visual" data-tilt>
-          <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=800&auto=format&fit=crop" alt="Placeholder professional portrait of Godwin Chukwunonso — replace with your own photo">
-          <div class="avatar-tag">
-            <span>godwin_chukwunonso.jpg</span>
-            <span>REPLACE ME</span>
+        <div class="terminal-body">
+          <div class="terminal-line">
+            <span class="prompt">$</span>whoami
+            <span class="out">Michael George</span>
+          </div>
+          <div class="terminal-line">
+            <span class="prompt">$</span>cat role.txt
+            <span class="out role">Cybersecurity Student · Aspiring Penetration Tester</span>
+          </div>
+          <div class="terminal-line">
+            <span class="prompt">$</span>echo $WELCOME_MESSAGE
+            <span class="out role">Welcome — thanks for stopping by my portfolio.<span class="cursor"></span></span>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- WELCOME / BIO -->
-    <section class="section" data-reveal-group>
-      <div class="wrap">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow">Welcome</span>
-          <h2>A little about how I got here</h2>
-          <p>Short version: curiosity about how things break turned into a career plan for making sure they don't.</p>
+      <div class="hero-photo-wrap">
+        <div class="badge-frame">
+          <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Photo of Michael George">
+            <defs>
+              <clipPath id="avatar-clip">
+                <circle cx="110" cy="110" r="108" />
+              </clipPath>
+            </defs>
+            <rect width="220" height="220" fill="#182333"/>
+            <image href="media/Project.jpg" width="220" height="220" clip-path="url(#avatar-clip)" preserveAspectRatio="xMidYMid slice" />
+            <circle cx="110" cy="110" r="108" fill="none" stroke="#35e0a6" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.5">
+              <animateTransform attributeName="transform" type="rotate" from="0 110 110" to="360 110 110" dur="20s" repeatCount="indefinite" />
+            </circle>
+          </svg>
         </div>
-
-        <div class="grid-2">
-          <div class="bio-card" data-reveal>
-            <h3 style="font-size:1.3rem; margin-bottom: 0.8rem;">The short bio</h3>
-            <p style="color: var(--slate);">I'm a 100-level Cybersecurity student at MIVA Open University, passionate about digital forensics, threat intelligence, and uncovering vulnerabilities to build a more secure digital space. This site is my personal portfolio, built with HTML, CSS, and JavaScript as part of my COS 106 Lab Assessment project.</p>
-          </div>
-          <div class="bio-card" data-reveal>
-            <h3 style="font-size:1.3rem; margin-bottom: 0.8rem;">What I'm focused on right now</h3>
-            <p style="color: var(--slate);">I'm building a foundation in digital forensics, SOC analysis, and threat intelligence, while volunteering as a coding mentor at a local secondary school. Teaching younger students HTML and CSS has deepened my own understanding more than anything else.</p>
-          </div>
-        </div>
+        <p class="badge-caption">ACCESS CARD · <strong>M. GEORGE</strong><br>Cybersecurity, MIVA OU</p>
       </div>
     </section>
 
-    <!-- CORE SKILLS -->
-    <section class="section section--skills" data-reveal-group>
-      <div class="wrap">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow">What I Know</span>
-          <h2>Core Skills</h2>
-          <p>Technologies and tools I work with to defend systems and investigate threats.</p>
-        </div>
+    <section class="section">
+      <span class="eyebrow">about</span>
+      <h2>Brief Biography</h2>
+      <p>
+        My name is Michael George — a driven technical professional, academic learner, and problem
+        solver who operates at the intersection of renewable energy systems, information technology,
+        and cybersecurity. I'm known for hands-on analytical skills and a steady commitment to growth,
+        splitting my time between managing complex engineering work and building out my technical
+        expertise in security.
+      </p>
+      <p style="margin-top: 14px;">
+        This site is my personal portfolio, built as my COS 106 term project — it showcases my
+        academic background, my projects, and the tools I'm learning, and includes a small
+        academic planner I built to manage my own tasks.
+      </p>
 
-        <div class="skill-category" data-reveal>
-          <div class="skill-category-label">Security Operations</div>
-          <div class="skill-tile-grid">
-            <div class="skill-tile">
-              <div class="skill-tile-top"><span class="skill-tile-icon">🌐</span></div>
-              <h4>Network Security</h4>
-              <p>Segmenting, monitoring, and hardening networks against intrusion.</p>
-              <span class="skill-level">Advanced</span>
-            </div>
-            <div class="skill-tile">
-              <div class="skill-tile-top"><span class="skill-tile-icon">🔍</span></div>
-              <h4>Digital Forensics</h4>
-              <p>Recovering and analyzing digital evidence after a security incident.</p>
-              <span class="skill-level">Advanced</span>
-            </div>
-            <div class="skill-tile">
-              <div class="skill-tile-top"><span class="skill-tile-icon">📡</span></div>
-              <h4>SOC Monitoring</h4>
-              <p>Watching live traffic and alerts to catch threats as they happen.</p>
-              <span class="skill-level">Intermediate</span>
-            </div>
-            <div class="skill-tile">
-              <div class="skill-tile-top"><span class="skill-tile-icon">🕵️</span></div>
-              <h4>Threat Intelligence</h4>
-              <p>Tracking malicious actors and emerging attack patterns.</p>
-              <span class="skill-level">Advanced</span>
-            </div>
-          </div>
-        </div>
+      <ul style="list-style: none; margin-top: 22px; display: flex; flex-direction: column; gap: 10px;">
+        <li class="muted" style="font-family: var(--font-mono); font-size: 0.9rem;">▹ Student at Miva Open University</li>
+        <li class="muted" style="font-family: var(--font-mono); font-size: 0.9rem;">▹ Studying Cybersecurity (100 Level)</li>
+        <li class="muted" style="font-family: var(--font-mono); font-size: 0.9rem;">▹ Interested in Offensive Security &amp; Web Development</li>
+        <li class="muted" style="font-family: var(--font-mono); font-size: 0.9rem;">▹ Goal: Penetration Tester &amp; Security Consultancy Founder</li>
+      </ul>
 
-        <div class="skill-category" data-reveal>
-          <div class="skill-category-label">Programming &amp; Tools</div>
-          <div class="skill-tile-grid">
-            <div class="skill-tile">
-              <div class="skill-tile-top"><span class="skill-tile-icon">🐍</span></div>
-              <h4>Python</h4>
-              <p>Writing scripts for automation, log parsing, and security tooling.</p>
-              <span class="skill-level">Security Scripting</span>
-            </div>
-            <div class="skill-tile">
-              <div class="skill-tile-top"><span class="skill-tile-icon">🐧</span></div>
-              <h4>Linux &amp; CLI</h4>
-              <p>Comfortable navigating, scripting, and hardening Linux systems.</p>
-              <span class="skill-level">Advanced</span>
-            </div>
-            <div class="skill-tile">
-              <div class="skill-tile-top"><span class="skill-tile-icon">🐙</span></div>
-              <h4>Git &amp; GitHub</h4>
-              <p>Version control, branching, and collaborative code review.</p>
-              <span class="skill-level">Version Control</span>
-            </div>
-            <div class="skill-tile">
-              <div class="skill-tile-top"><span class="skill-tile-icon">🧰</span></div>
-              <h4>VS Code</h4>
-              <p>My daily driver for scripting, debugging, and documentation.</p>
-              <span class="skill-level">Advanced</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="audio-block" data-reveal style="margin-top: 2.5rem;">
-          <div class="audio-block-label">🎙️ Audio Introduction — <em>Godwin Chukwunonso</em></div>
-          <audio controls preload="none">
-            <source src="audio/introduction.mp3" type="audio/mpeg">
-            Your browser doesn't support embedded audio. <a href="audio/introduction.mp3">Download the audio introduction</a> instead.
-          </audio>
-        </div>
+      <div class="cta-row">
+        <a class="btn" href="about.html">View Full Background →</a>
+        <a class="btn alt" href="contact.html">Get In Touch</a>
       </div>
     </section>
 
-    <!-- QUICK LINKS -->
-    <section class="section section--dim" data-reveal-group>
-      <div class="wrap">
-        <div class="section-head" data-reveal>
-          <span class="eyebrow">Explore</span>
-          <h2>Where to go from here</h2>
-        </div>
-        <div class="grid-3">
-          <a class="bio-card" href="about.html" data-reveal>
-            <h3 style="font-size:1.1rem;">About Me →</h3>
-            <p style="color: var(--slate); margin-top:0.6rem;">Education, skills, and what I do outside of class.</p>
-          </a>
-          <a class="bio-card" href="projects.html" data-reveal>
-            <h3 style="font-size:1.1rem;">Projects →</h3>
-            <p style="color: var(--slate); margin-top:0.6rem;">Four builds spanning intrusion detection, phishing defense, and forensics.</p>
-          </a>
-          <a class="bio-card" href="planner.html" data-reveal>
-            <h3 style="font-size:1.1rem;">Academic Planner →</h3>
-            <p style="color: var(--slate); margin-top:0.6rem;">The live dashboard I actually use to track coursework.</p>
-          </a>
-        </div>
+    <section class="section">
+      <span class="eyebrow">audio log</span>
+      <h2>Audio Introduction</h2>
+      <div class="panel">
+        <audio controls>
+          <source src="media/intro.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <p class="media-note">Add your own recording at <code>media/intro.mp3</code> — a 20–30 second spoken introduction works well here.</p>
       </div>
     </section>
+
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <span>© <span data-year></span> Godwin Chukwunonso &amp; MIVA Open University. All rights reserved.</span>
-      <div class="footer-links">
-        <a href="contact.html">Contact</a>
-        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
+  <footer>
+    <div class="footer-inner">
+      <span><span class="status-dot"></span>system nominal</span>
+      <span>&copy; 2025 MIVA Open University. All Rights Reserved.</span>
     </div>
   </footer>
 
