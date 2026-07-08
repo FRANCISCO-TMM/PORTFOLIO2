@@ -178,36 +178,12 @@ h1 { font-size: 2.1rem; line-height: 1.25; }
 h2 { font-size: 1.3rem; margin-bottom: 6px; }
 h3 { font-size: 1.02rem; }
 
-.case-label {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  color: var(--evidence-red);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  display: block;
-  margin-bottom: 8px;
-}
-.case-label::before { content: '§ '; }
-
 .section { margin-bottom: 52px; padding-top: 8px; }
 
 .section > h2 {
   border-bottom: 2px solid var(--ink);
   padding-bottom: 12px;
   margin-bottom: 22px;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 12px;
-}
-
-.section > h2::after {
-  content: attr(data-code);
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  color: var(--ink-muted);
-  letter-spacing: 0.05em;
-  font-weight: 400;
 }
 
 p { color: var(--ink); }
