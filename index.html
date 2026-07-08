@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michael George — Cybersecurity Portfolio</title>
-  <meta name="description" content="Personal portfolio and academic management site for Michael George, Cybersecurity student at MIVA Open University.">
-  <link rel="stylesheet" href="style.css?v=2">
+  <meta name="description" content="Personal portfolio and academic case file for Michael George, Cybersecurity student at MIVA Open University.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <nav class="tabbar">
     <div class="nav-inner">
-      <div class="nav-dots"><span></span><span></span><span></span></div>
-      <span class="nav-brand"><strong>michael@portfolio</strong>:~$</span>
+      <span class="nav-brand"><strong>CASE MG-2026</strong>michael@portfolio</span>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <ul>
         <li><a href="index.html">home</a></li>
@@ -27,49 +26,44 @@
   <main class="container">
 
     <section class="hero">
-      <div class="terminal">
-        <div class="terminal-bar">
-          <span></span><span></span><span></span>
-          <em>michael@security-ops: ~</em>
-        </div>
-        <div class="terminal-body">
-          <div class="terminal-line">
-            <span class="prompt">$</span>whoami
-            <span class="out">Michael George</span>
-          </div>
-          <div class="terminal-line">
-            <span class="prompt">$</span>cat role.txt
-            <span class="out role">Cybersecurity Student · Aspiring Penetration Tester</span>
-          </div>
-          <div class="terminal-line">
-            <span class="prompt">$</span>echo $WELCOME_MESSAGE
-            <span class="out role">Welcome — thanks for stopping by my portfolio.<span class="cursor"></span></span>
-          </div>
-        </div>
-      </div>
-
       <div class="hero-photo-wrap">
         <div class="badge-frame">
           <svg viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Photo of Michael George">
             <defs>
-              <clipPath id="avatar-clip">
-                <circle cx="110" cy="110" r="108" />
-              </clipPath>
+              <clipPath id="avatar-clip"><rect x="4" y="4" width="212" height="212" /></clipPath>
             </defs>
-            <rect width="220" height="220" fill="#182333"/>
+            <rect width="220" height="220" fill="#dcd3bc"/>
             <image href="media/Project.jpg" width="220" height="220" clip-path="url(#avatar-clip)" preserveAspectRatio="xMidYMid slice" />
-            <circle cx="110" cy="110" r="108" fill="none" stroke="#35e0a6" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.5">
-              <animateTransform attributeName="transform" type="rotate" from="0 110 110" to="360 110 110" dur="20s" repeatCount="indefinite" />
-            </circle>
           </svg>
         </div>
-        <p class="badge-caption">ACCESS CARD · <strong>M. GEORGE</strong><br>Cybersecurity, MIVA OU</p>
+        <p class="badge-caption">SUBJECT PHOTO · <strong>M. GEORGE</strong><br>Cybersecurity, MIVA OU</p>
+      </div>
+
+      <div class="dossier">
+        <div class="dossier-bar">
+          <span>FIELD REPORT — OPEN CASE</span>
+          <span class="tag">ACTIVE</span>
+        </div>
+        <div class="dossier-body">
+          <div class="dossier-line">
+            <span class="field-label">SUBJECT:</span>
+            <span class="out">Michael George</span>
+          </div>
+          <div class="dossier-line">
+            <span class="field-label">ROLE:</span>
+            <span class="out role">Cybersecurity Student · Aspiring Penetration Tester</span>
+          </div>
+          <div class="dossier-line">
+            <span class="field-label">NOTE:</span>
+            <span class="out role">Welcome — thanks for pulling this file.<span class="cursor"></span></span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <span class="eyebrow">about</span>
-      <h2>Brief Biography</h2>
+      <span class="case-label">subject profile</span>
+      <h2 data-code="FILE 01 / BIO">Brief Biography</h2>
       <p>
         My name is Michael George — a driven technical professional, academic learner, and problem
         solver who operates at the intersection of renewable energy systems, information technology,
@@ -78,16 +72,16 @@
         expertise in security.
       </p>
       <p style="margin-top: 14px;">
-        This site is my personal portfolio, built as my COS 106 term project — it showcases my
-        academic background, my projects, and the tools I'm learning, and includes a small
-        academic planner I built to manage my own tasks.
+        This site is my personal portfolio, built as my COS 106 term project — it documents my
+        academic background, the projects I've built, and the tools I'm learning, including a small
+        academic planner I use to manage my own tasks.
       </p>
 
       <ul style="list-style: none; margin-top: 22px; display: flex; flex-direction: column; gap: 10px;">
-        <li class="muted" style="font-family: var(--font-mono); font-size: 0.9rem;">▹ Student at Miva Open University</li>
-        <li class="muted" style="font-family: var(--font-mono); font-size: 0.9rem;">▹ Studying Cybersecurity (100 Level)</li>
-        <li class="muted" style="font-family: var(--font-mono); font-size: 0.9rem;">▹ Interested in Offensive Security &amp; Web Development</li>
-        <li class="muted" style="font-family: var(--font-mono); font-size: 0.9rem;">▹ Goal: Penetration Tester &amp; Security Consultancy Founder</li>
+        <li class="muted" style="font-family: var(--font-mono); font-size: 0.88rem;">▸ Student at Miva Open University</li>
+        <li class="muted" style="font-family: var(--font-mono); font-size: 0.88rem;">▸ Studying Cybersecurity (100 Level)</li>
+        <li class="muted" style="font-family: var(--font-mono); font-size: 0.88rem;">▸ Interested in Offensive Security &amp; Web Development</li>
+        <li class="muted" style="font-family: var(--font-mono); font-size: 0.88rem;">▸ Goal: Penetration Tester &amp; Security Consultancy Founder</li>
       </ul>
 
       <div class="cta-row">
@@ -97,8 +91,8 @@
     </section>
 
     <section class="section">
-      <span class="eyebrow">audio log</span>
-      <h2>Audio Introduction</h2>
+      <span class="case-label">recorded statement</span>
+      <h2 data-code="FILE 02 / AUDIO">Audio Introduction</h2>
       <div class="panel">
         <audio controls>
           <source src="media/intro.mp3" type="audio/mpeg">
@@ -112,7 +106,7 @@
 
   <footer>
     <div class="footer-inner">
-      <span><span class="status-dot"></span>system nominal</span>
+      <span><span class="status-dot"></span>case status: active</span>
       <span>&copy; 2025 MIVA Open University. All Rights Reserved.</span>
     </div>
   </footer>
