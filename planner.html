@@ -10,41 +10,41 @@
 
   <nav class="tabbar">
     <div class="nav-inner">
-      <div class="nav-dots"><span></span><span></span><span></span></div>
-      <span class="nav-brand"><strong>michael@portfolio</strong>:~$</span>
+      <span class="nav-brand"><strong>CASE MG-2026</strong>michael@portfolio</span>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <ul>
         <li><a href="index.html">home</a></li>
         <li><a href="about.html">about</a></li>
         <li><a href="projects.html">projects</a></li>
-        <li><a href="planner.html">planner</a></li>
+        <li><a href="planner.html" class="active">planner</a></li>
         <li><a href="contact.html">contact</a></li>
       </ul>
     </div>
   </nav>
 
   <main class="container">
+    <span class="case-label">task log</span>
     <h1>Academic Planner</h1>
-    <p class="muted" style="max-width: 620px; margin: 0 auto 40px; text-align: center;">
-      Add tasks, mark them complete, and delete what you no longer need. Your list is saved in
-      this browser, so it's still here next time you visit.
+    <p class="muted" style="max-width: 620px; margin: 14px 0 40px;">
+      Log a task, mark it resolved, or strike it from the record. Every entry is saved in
+      this browser, so the log is still here next time you visit.
     </p>
 
     <section class="section">
-      <span class="eyebrow">new task</span>
-      <h2>Add a Task</h2>
+      <span class="case-label">new entry</span>
+      <h2 data-code="FILE 07 / ADD">Add a Task</h2>
       <div class="panel">
         <div class="task-input-container">
           <input type="text" id="taskInput" placeholder="e.g. Submit COS 106 term project" aria-label="New task">
-          <button id="addTaskBtn" type="button">Add Task</button>
+          <button id="addTaskBtn" type="button">Log Task</button>
         </div>
-        <p class="media-note">Press Enter or click "Add Task" to save it to your list.</p>
+        <p class="media-note">Press Enter or click "Log Task" to add it to the record.</p>
       </div>
     </section>
 
     <section class="section">
-      <span class="eyebrow">task list</span>
-      <h2>My Tasks</h2>
+      <span class="case-label">open &amp; resolved entries</span>
+      <h2 data-code="FILE 08 / LOG">My Tasks</h2>
       <ul id="taskList" class="task-list"></ul>
       <p id="plannerStats" class="planner-stats"></p>
     </section>
@@ -52,7 +52,7 @@
 
   <footer>
     <div class="footer-inner">
-      <span><span class="status-dot"></span>system nominal</span>
+      <span><span class="status-dot"></span>case status: active</span>
       <span>&copy; 2025 MIVA Open University. All Rights Reserved.</span>
     </div>
   </footer>
