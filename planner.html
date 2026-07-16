@@ -40,9 +40,9 @@
 
       <!-- Mobile Menu Button -->
       <button id="mobile-menu-btn" 
-              class="md:hidden w-10 h-10 flex items-center justify-center text-[#b8b2a7] hover:text-white"
+              class="md:hidden w-10 h-10 flex items-center justify-center text-[#f5f0e2] hover:text-white rounded-lg border border-white/15 bg-white/5"
               aria-label="Toggle menu">
-        <i data-lucide="menu" class="w-6 h-6"></i>
+        <i data-lucide="menu" class="w-5 h-5">&#9776;</i>
       </button>
     </nav>
 
@@ -59,71 +59,152 @@
   </header>
 
   <main>
-    <section id="academics" class="w-full py-16 border-t border-white/10" style="background: #0a0c12;">
-      <div class="max-w-6xl mx-auto px-6">
-        <div class="grid md:grid-cols-12 gap-x-12 gap-y-10 items-center">
-          <div class="md:col-span-7">
-            <div class="uppercase tracking-[3px] text-xs font-semibold mb-3" style="color: #e8a838;">MY JOURNEY</div>
-            <h2 class="heading-font text-4xl md:text-5xl font-bold tracking-tighter">Educational Background<br>&amp; Current Studies</h2>
-            <p class="mt-4 max-w-md text-[#b8b2a7] text-[17px]">
-              First-year student pursuing a B.Sc in Cybersecurity at MIVA Open University. Building strong foundations in technology, programming, and security principles.
-            </p>
-          </div>
-          
-          <div class="md:col-span-5 flex justify-center md:justify-end">
-            <img src="https://images.pexels.com/photos/5003314/pexels-photo-5003314.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" 
-                 alt="Proud young woman celebrating academic achievement in graduation cap"
-                 class="w-72 h-72 object-cover rounded-3xl shadow-2xl ring-1 ring-white/10">
-          </div>
-        </div>
+<section class="max-w-5xl mx-auto px-6 py-16">
+  <div class="text-center mb-10">
+    <h2 class="heading-font text-4xl font-bold tracking-tighter">Academic Planner</h2>
+    <p class="mt-2 text-[#b8b2a7]">100 Level • B.Sc. Cybersecurity • MIVA Open University</p>
+  </div>
 
-      
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
-          <!-- Institution & Program -->
-          <div class="portfolio-card rounded-3xl p-7 border border-white/10" style="background: #1a1d27;">
-            <div class="w-12 h-12 rounded-2xl flex items-center justify-center mb-5" style="background: rgba(232,168,56,0.1);">
-              <i data-lucide="graduation-cap" class="w-6 h-6" style="color:#e8a838"></i>
-            </div>
-            <h3 class="font-bold text-xl tracking-tight">MIVA Open University</h3>
-            <div class="mt-4 space-y-2 text-[#b8b2a7]">
-              <div><span class="font-semibold text-white">Program:</span> B.Sc Cybersecurity</div>
-              <div><span class="font-semibold text-white">Level:</span> 100 Level (First Year)</div>
-              <div class="text-sm pt-1">Open University focused on flexible, quality education in technology and security fields.</div>
-            </div>
-          </div>
-
-          <!-- Current Coursework -->
-          <div class="portfolio-card rounded-3xl p-7 border border-white/10" style="background: #1a1d27;">
-            <div class="w-12 h-12 rounded-2xl flex items-center justify-center mb-5" style="background: rgba(232,168,56,0.1);">
-              <i data-lucide="book-open" class="w-6 h-6" style="color:#e8a838"></i>
-            </div>
-            <h3 class="font-bold text-xl tracking-tight">Current Coursework</h3>
-            <div class="mt-4 space-y-3 text-[#b8b2a7]">
-              <div class="flex justify-between items-start">
-                <span>COS106 – Introduction to Web Technologies</span>
-              </div>
-              <div class="text-sm pt-2">Building foundational skills in web development, HTML, CSS, JavaScript, and responsive design — directly supporting my interest in creating secure and user-friendly digital experiences.</div>
-            </div>
-          </div>
-
-          <!-- Skills & Interests -->
-          <div class="portfolio-card rounded-3xl p-7 border border-white/10" style="background: #1a1d27;">
-            <div class="w-12 h-12 rounded-2xl flex items-center justify-center mb-5" style="background: rgba(232,168,56,0.1);">
-              <i data-lucide="code" class="w-6 h-6" style="color:#e8a838"></i>
-            </div>
-            <h3 class="font-bold text-xl tracking-tight">Skills &amp; Interests</h3>
-            <div class="mt-4 flex flex-wrap gap-2">
-              <span class="text-xs px-3.5 py-1 rounded-full bg-white/5 text-[#b8b2a7]">Programming</span>
-              <span class="text-xs px-3.5 py-1 rounded-full bg-white/5 text-[#b8b2a7]">Responsive Web Design</span>
-              <span class="text-xs px-3.5 py-1 rounded-full bg-white/5 text-[#b8b2a7]">Problem Solving</span>
-              <span class="text-xs px-3.5 py-1 rounded-full bg-white/5 text-[#b8b2a7]">Cybersecurity Fundamentals</span>
-              <span class="text-xs px-3.5 py-1 rounded-full bg-white/5 text-[#b8b2a7]">Continuous Learning</span>
-            </div>
-            <p class="mt-4 text-sm text-[#b8b2a7]">Passionate about applying code to solve real-world problems and building secure digital solutions.</p>
-          </div>
-        </div>
+  <!-- Student Info -->
+  <div class="bg-[#1a1d27] border border-white/10 rounded-3xl p-8 mb-8">
+    <div class="grid md:grid-cols-4 gap-6">
+      <div>
+        <p class="text-xs text-[#8a857d] uppercase tracking-widest">Student Name</p>
+        <p class="font-semibold text-lg">Deborah Christopher</p>
       </div>
-    </section>
+      <div>
+        <p class="text-xs text-[#8a857d] uppercase tracking-widest">Programme</p>
+        <p class="font-semibold">B.Sc. Cybersecurity</p>
+      </div>
+      <div>
+        <p class="text-xs text-[#8a857d] uppercase tracking-widest">Level</p>
+        <p class="font-semibold">100 Level</p>
+      </div>
+      <div>
+        <p class="text-xs text-[#8a857d] uppercase tracking-widest">Semester</p>
+        <input type="text" value="First Semester 2025/2026" 
+               class="bg-transparent border-b border-white/20 w-full focus:outline-none text-white">
+      </div>
+    </div>
+  </div>
+
+  <!-- Courses Table -->
+  <div class="mb-10">
+    <h3 class="font-semibold text-xl mb-4 flex items-center gap-2">
+      <i data-lucide="book-open" class="w-5 h-5 text-[#e8a838]"></i> 
+      Registered Courses
+    </h3>
+    
+    <div class="overflow-x-auto rounded-2xl border border-white/10">
+      <table class="w-full text-sm">
+        <thead class="bg-white/5">
+          <tr>
+            <th class="text-left p-4 font-medium">Course Code</th>
+            <th class="text-left p-4 font-medium">Course Title</th>
+            <th class="text-center p-4 font-medium">Assignment Due</th>
+            <th class="text-center p-4 font-medium">Quiz/Test</th>
+            <th class="text-center p-4 font-medium">Exam</th>
+            <th class="text-center p-4 font-medium">Status</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/10">
+          <tr>
+            <td class="p-4 font-mono">COS 101</td>
+            <td class="p-4">Introduction to Computing</td>
+            <td class="p-4 text-center"><input type="date" class="bg-transparent text-sm"></td>
+            <td class="p-4 text-center"><input type="date" class="bg-transparent text-sm"></td>
+            <td class="p-4 text-center"><input type="date" class="bg-transparent text-sm"></td>
+            <td class="p-4 text-center">
+              <select class="bg-[#1a1d27] border border-white/20 rounded px-2 py-1 text-sm">
+                <option>Not Started</option>
+                <option>In Progress</option>
+                <option>Completed</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="p-4 font-mono">COS 102</td>
+            <td class="p-4">Problem Solving</td>
+            <td class="p-4 text-center"><input type="date" class="bg-transparent text-sm"></td>
+            <td class="p-4 text-center"><input type="date" class="bg-transparent text-sm"></td>
+            <td class="p-4 text-center"><input type="date" class="bg-transparent text-sm"></td>
+            <td class="p-4 text-center">
+              <select class="bg-[#1a1d27] border border-white/20 rounded px-2 py-1 text-sm">
+                <option>Not Started</option>
+                <option>In Progress</option>
+                <option>Completed</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Weekly Study Schedule + Checklist -->
+  <div class="grid md:grid-cols-2 gap-8">
+    
+    <!-- Weekly Schedule -->
+    <div class="bg-[#1a1d27] border border-white/10 rounded-3xl p-7">
+      <h3 class="font-semibold text-xl mb-5 flex items-center gap-2">
+        <i data-lucide="calendar" class="w-5 h-5 text-[#e8a838]"></i> 
+        Weekly Study Schedule
+      </h3>
+      <div class="space-y-3 text-sm">
+        <div class="flex justify-between items-center"><span>Monday</span> <input type="text" placeholder="e.g. 6:00pm - 8:00pm" class="bg-transparent border-b border-white/20 w-48 text-right"></div>
+        <div class="flex justify-between items-center"><span>Tuesday</span> <input type="text" placeholder="e.g. 5:00pm - 7:00pm" class="bg-transparent border-b border-white/20 w-48 text-right"></div>
+        <div class="flex justify-between items-center"><span>Wednesday</span> <input type="text" placeholder="e.g. 4:00pm - 6:00pm" class="bg-transparent border-b border-white/20 w-48 text-right"></div>
+        <div class="flex justify-between items-center"><span>Thursday</span> <input type="text" placeholder="e.g. 6:00pm - 8:00pm" class="bg-transparent border-b border-white/20 w-48 text-right"></div>
+        <div class="flex justify-between items-center"><span>Friday</span> <input type="text" placeholder="e.g. 3:00pm - 5:00pm" class="bg-transparent border-b border-white/20 w-48 text-right"></div>
+        <div class="flex justify-between items-center"><span>Saturday</span> <input type="text" placeholder="e.g. 10:00am - 12:00pm" class="bg-transparent border-b border-white/20 w-48 text-right"></div>
+        <div class="flex justify-between items-center"><span>Sunday</span> <input type="text" placeholder="Revision / Rest" class="bg-transparent border-b border-white/20 w-48 text-right"></div>
+      </div>
+    </div>
+
+    <!-- Assignment Checklist -->
+    <div class="bg-[#1a1d27] border border-white/10 rounded-3xl p-7">
+      <h3 class="font-semibold text-xl mb-5 flex items-center gap-2">
+        <i data-lucide="check-square" class="w-5 h-5 text-[#e8a838]"></i> 
+        Assignment Checklist
+      </h3>
+      <div class="space-y-3 text-sm">
+        <label class="flex items-center gap-3 cursor-pointer">
+          <input type="checkbox" class="accent-[#e8a838]"> <span>Complete weekly readings</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer">
+          <input type="checkbox" class="accent-[#e8a838]"> <span>Submit assignments before deadlines</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer">
+          <input type="checkbox" class="accent-[#e8a838]"> <span>Review lecture notes</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer">
+          <input type="checkbox" class="accent-[#e8a838]"> <span>Practice coding exercises</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer">
+          <input type="checkbox" class="accent-[#e8a838]"> <span>Prepare for quizzes</span>
+        </label>
+        <label class="flex items-center gap-3 cursor-pointer">
+          <input type="checkbox" class="accent-[#e8a838]"> <span>Revise for exams</span>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Semester Goals -->
+  <div class="mt-8 bg-[#1a1d27] border border-white/10 rounded-3xl p-7">
+    <h3 class="font-semibold text-xl mb-5 flex items-center gap-2">
+      <i data-lucide="target" class="w-5 h-5 text-[#e8a838]"></i> 
+      Semester Goals
+    </h3>
+    <ul class="space-y-2 text-sm">
+      <li class="flex items-start gap-3"><span class="text-[#e8a838] mt-1">→</span> Maintain a strong GPA.</li>
+      <li class="flex items-start gap-3"><span class="text-[#e8a838] mt-1">→</span> Submit assignments on time.</li>
+      <li class="flex items-start gap-3"><span class="text-[#e8a838] mt-1">→</span> Improve Python programming skills.</li>
+      <li class="flex items-start gap-3"><span class="text-[#e8a838] mt-1">→</span> Learn basic Linux commands.</li>
+      <li class="flex items-start gap-3"><span class="text-[#e8a838] mt-1">→</span> Build at least one cybersecurity project.</li>
+    </ul>
+  </div>
+</section>
   </main>
 
   <footer class="border-t border-white/10 py-8 md:py-9">
