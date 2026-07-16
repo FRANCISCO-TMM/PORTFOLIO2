@@ -201,6 +201,146 @@
       }
     }
 
+    // Contact form validation + mailto handoff
+    function initContactForm() {
+      const form = document.getElementById('contact-form');
+      if (!form) return;
+
+      const nameInput = document.getElementById('contact-name');
+      const emailInput = document.getElementById('contact-email');
+      const phoneInput = document.getElementById('contact-phone');
+      const messageInput = document.getElementById('contact-message');
+      const successMsg = document.getElementById('contact-success');
+
+      function showError(input, message) {
+        const errorEl = input.parentElement.querySelector('.field-error');
+        input.classList.add('border-red-400/70');
+        if (errorEl) {
+          errorEl.textContent = message;
+          errorEl.classList.remove('hidden');
+        }
+      }
+
+      function clearError(input) {
+        const errorEl = input.parentElement.querySelector('.field-error');
+        input.classList.remove('border-red-400/70');
+        if (errorEl) {
+          errorEl.textContent = '';
+          errorEl.classList.add('hidden');
+        }
+      }
+
+      [nameInput, emailInput, phoneInput, messageInput].forEach(input => {
+        if (!input) return;
+        input.addEventListener('input', () => clearError(input));
+      });
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        successMsg.classList.add('hidden');
+
+        let valid = true;
+
+        if (!nameInput.value.trim()) {
+          showError(nameInput, 'Please enter your name.');
+          valid = false;
+        } else {
+          clearError(nameInput);
+        }
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailInput.value.trim()) {
+          showError(emailInput, 'Please enter your email.');
+          valid = false;
+        } else if (!emailPattern.test(emailInput.value.trim())) {
+          showError(emailInput, 'Please enter a valid email address.');
+          valid = false;
+        } else {
+          clearError(emailInput);
+        }
+
+        const digitsOnly = phoneInput.value.trim().replace(/[\s-]/g, '').replace(/^\+/, '');
+        if (!phoneInput.value.trim()) {
+          showError(phoneInput, 'Please enter your phone number.');
+          valid = false;
+        } else if (!/^\d{7,15}$/.test(digitsOnly)) {
+          showError(phoneInput, 'Phone number should contain digits only.');
+          valid = false;
+        } else {
+          clearError(phoneInput);
+        }
+
+        if (!messageInput.value.trim()) {
+          showError(messageInput, 'Please enter a message.');
+          valid = false;
+        } else {
+          clearError(messageInput);
+        }
+
+        if (!valid) return;
+
+        const subject = encodeURIComponent('Portfolio contact from ' + nameInput.value.trim());
+        const body = encodeURIComponent(
+          messageInput.value.trim() +
+          '\n\n---\nName: ' + nameInput.value.trim() +
+          '\nEmail: ' + emailInput.value.trim() +
+          '\nPhone: ' + phoneInput.value.trim()
+        );
+        window.location.href = `mailto:mvibe607@gmail.com?subject=${subject}&body=${body}`;
+
+        successMsg.classList.remove('hidden');
+        form.reset();
+      });
+    }
+
+    // Highlight the current page in the nav
+    function initActiveNav() {
+      const current = (window.location.pathname.split('/').pop() || 'index.html');
+      document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
+        const href = link.getAttribute('href');
+        if (href === current || (current === '' && href === 'index.html')) {
+          link.classList.add('nav-active');
+        }
+      });
+    }
+
+    // Fade sections in as they scroll into view
+    function initScrollReveal() {
+      const targets = document.querySelectorAll('main > section');
+      if (!targets.length || typeof IntersectionObserver === 'undefined') return;
+
+      targets.forEach(el => el.classList.add('reveal'));
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+      targets.forEach(el => observer.observe(el));
+    }
+
+    // Back-to-top button
+    function initBackToTop() {
+      const btn = document.getElementById('back-to-top');
+      if (!btn) return;
+
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 500) {
+          btn.classList.add('show');
+        } else {
+          btn.classList.remove('show');
+        }
+      });
+
+      btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
     // Smooth scroll
     function initSmoothScroll() {
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -227,6 +367,10 @@
       initMobileMenu();
       initBlogSearch();
       initSmoothScroll();
+      initContactForm();
+      initActiveNav();
+      initScrollReveal();
+      initBackToTop();
       
       document.addEventListener('keydown', (e) => {
         if (e.key === '/' && document.activeElement.tagName === 'BODY') {
