@@ -19,11 +19,11 @@
         if (menuOpen) {
           mobileMenu.classList.remove('hidden');
           mobileMenu.classList.add('mobile-menu');
-          menuBtn.innerHTML = '<i data-lucide="x" class="w-6 h-6"></i>';
+          menuBtn.innerHTML = '<i data-lucide="x" class="w-5 h-5">&#10005;</i>';
         } else {
           mobileMenu.classList.add('hidden');
           mobileMenu.classList.remove('mobile-menu');
-          menuBtn.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
+          menuBtn.innerHTML = '<i data-lucide="menu" class="w-5 h-5">&#9776;</i>';
         }
         
         initIcons();
@@ -32,7 +32,7 @@
       document.querySelectorAll('.mobile-nav-link').forEach(link => {
         link.addEventListener('click', () => {
           mobileMenu.classList.add('hidden');
-          menuBtn.innerHTML = '<i data-lucide="menu" class="w-6 h-6"></i>';
+          menuBtn.innerHTML = '<i data-lucide="menu" class="w-5 h-5">&#9776;</i>';
           menuOpen = false;
           initIcons();
         });
